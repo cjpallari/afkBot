@@ -1,4 +1,6 @@
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+Source:brew.sh
+
 
 # afkBot
 Python Script that will move your mouse occasionally in order to prevent computer from sleeping
