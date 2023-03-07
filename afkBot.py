@@ -4,12 +4,16 @@ import random
 import time
 import tkinter as tk
 from tkinter import messagebox
+import signal
 
-def on_interrupt():
+def on_interrupt(signal, frame):
     messagebox.showinfo("Program Terminated","Program terminated by user")
+    raise KeyboardInterrupt
 
 root = tk.Tk()
-root.bind("<Control-c>", lambda event: on_interrupt())
+
+
+signal.signal(signal.SIGINT, on_interrupt)
 
 
 
@@ -19,3 +23,5 @@ while True:
 
     pag.moveTo(x,y,0.5)
     time.sleep(60)
+
+    root.update()
