@@ -22,6 +22,6 @@ while True:
     y = random.randint(200,300)
 
     pag.moveTo(x,y,0.5)
-    time.sleep(60)
+    time.sleep(10)
 
     root.update()
