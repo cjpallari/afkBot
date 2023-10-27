@@ -21,7 +21,7 @@ while True:
     x = random.randint(500,700)
     y = random.randint(200,300)
 
-    pag.moveTo(x,y,0.5)
+    pag.moveTo(x,y,duration=0.5)
     time.sleep(10)
 
-    root.update()
+    #root.update()
